@@ -33,7 +33,7 @@ router.get('/hashtag', async (req, res, next) => {
     }
 
     return res.render('main', {
-      title: `${query} | NodeBird`,
+      title: `${query} | sigunsns`,
       twits: posts,
     });
   } catch (error) {
@@ -51,7 +51,7 @@ router.get('/', async (req, res, next) => {
       order: [['createdAt', 'DESC']],
     });
     res.render('main', {
-      title: 'NodeBird',
+      title: 'sihunsns',
       twits: posts,
     });
   } catch (err) {
